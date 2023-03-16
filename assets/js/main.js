@@ -9,7 +9,7 @@ L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. Generiamo un n
 //chiedere all'utente di inserire una parola
 //Creare una funzione per capire se la parola inserita è palindroma
 
-/* //chiedere all'utente di inserire una parola
+//chiedere all'utente di inserire una parola
 const userWord = prompt('Inserisci una parola');
 const reverseWord = wordReverse(userWord);
 
@@ -25,7 +25,7 @@ if(userWord == reverseWord){
 } else {
   console.log('La parola non è palindroma');
 }
- */
+
 
 //Pari e Dispari
 //scelgo pari o dispari e inserisco un numero da 1 a 5
@@ -33,6 +33,7 @@ if(userWord == reverseWord){
 //sommiamo i due numeri
 //stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 //dichiariamo chi ha vinto
+
 
 //scelgo pari o dispari e inserisco un numero da 1 a 5
 const selectWord = prompt('Scelgo Pari o Dispari:');
@@ -50,3 +51,33 @@ console.log(num);
 //sommiamo i due numeri
 const sumNumbers = selectNumber + num;
 console.log(sumNumbers);
+
+
+//stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+function sumOddOrEven() {
+let sumOddEven = sumNumbers
+let wordUser = selectWord
+let messages;
+if (wordUser == "pari" && sumOddEven % 2 == 0) {
+  console.log(sumOddEven, 'Pari');  
+  //dichiariamo chi ha vinto  
+  messages = "HAI VINTO!";
+  console.log(messages);
+} else if (wordUser == "pari" && sumOddEven % 2 != 0){
+  console.log(sumOddEven, 'Dispari')
+  //dichiariamo chi ha vinto
+  messages = "HAI PERSO!"
+  console.log(messages);
+} else if (wordUser == "dispari" && sumOddEven % 2 != 0) {
+  console.log(sumOddEven, 'Dispari'); 
+  //dichiariamo chi ha vinto   
+  messages = "HAI VINTO!";
+  console.log(messages);
+} else if (wordUser == "dispari" && sumOddEven % 2 == 0) {
+  console.log(sumOddEven, 'Pari'); 
+  //dichiariamo chi ha vinto
+  messages = "HAI PERSO!";
+  console.log(messages);
+}  
+}
+let oddEven = sumOddOrEven()
