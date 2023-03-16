@@ -35,14 +35,18 @@ if(userWord == reverseWord){
 //dichiariamo chi ha vinto
 
 //scelgo pari o dispari e inserisco un numero da 1 a 5
-const selectWord = prompt('Scelgo Pari o Dispari:')
-const selectNumber = prompt('scelgo un numero da 1 a 5:') 
+const selectWord = prompt('Scelgo Pari o Dispari:');
+const selectNumber = Number(prompt('scelgo un numero da 1 a 5:'));
 
 
 //generiamo un numero random (1/5) per il pc (usando una funzione)
 function pcRandom() {
   let num = Math.round(Math.random()* 5) + 1;
-  return num
+  return num;
 }
-let num = pcRandom()
+let num = pcRandom();
 console.log(num);
+
+//sommiamo i due numeri
+const sumNumbers = selectNumber + num;
+console.log(sumNumbers);
