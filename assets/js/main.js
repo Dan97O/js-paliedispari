@@ -46,11 +46,11 @@ function pcRandom() {
   return num;
 }
 let num = pcRandom();
-console.log(num);
+console.log(num, 'Numero PC');
 
 //sommiamo i due numeri
 const sumNumbers = selectNumber + num;
-console.log(sumNumbers);
+console.log(sumNumbers, 'Somma Totale');
 
 
 //stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
