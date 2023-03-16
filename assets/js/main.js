@@ -40,9 +40,9 @@ const selectNumber = prompt('scelgo un numero da 1 a 5:')
 
 
 //generiamo un numero random (1/5) per il pc (usando una funzione)
-let pcNum;
 function pcRandom() {
-  let num = Math.round(Math.random()* 5 + 1);
-  console.log(num);
+  let num = Math.round(Math.random()* 5) + 1;
+  return num
 }
-pcRandom(pcNum)
+let num = pcRandom()
+console.log(num);
