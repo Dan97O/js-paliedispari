@@ -53,6 +53,35 @@ const sumNumbers = selectNumber + num;
 console.log(sumNumbers, 'Somma Totale');
 
 
+// funzione pari o dispari?
+function even(number) {
+  if (number % 2 == 0) {
+      return true;
+  } else {
+      return false;
+  }
+}
+
+/* salvo il risultato in una variabile let */
+let resultEven = even(sumNumbers);
+/* stampo se pari o dispari */
+if (resultEven == true) {
+    resultEven = 'pari';
+    console.log(resultEven, 'La somma dei due numeri è pari');
+} else {
+    resultEven = 'dispari';
+    console.log(resultEven, 'La somma dei due numeri è dispari');
+}
+
+//dichiariamo chi ha vinto  
+if (selectWord == resultEven) {
+    console.log('Hai vinto!');
+} else {
+    console.log('Hai perso');
+}
+
+
+/* 
 //stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 function sumOddOrEven() {
 let sumOddEven = sumNumbers
@@ -81,3 +110,4 @@ if (wordUser == "pari" && sumOddEven % 2 == 0) {
 }  
 }
 let oddEven = sumOddOrEven()
+ */
